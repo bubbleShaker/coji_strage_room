@@ -1,0 +1,64 @@
+body {
+    background-image: url(./ncg1.jpg);
+    font-family: "Yu Gothic UI Bold";
+    margin: 50px 0 30px 0;
+    background-color: #a0d1cdCC;
+    color: white;
+}
+
+h1, h2, p[name="subtitle"] {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: -10px;
+}
+
+p[name="subtitle"] {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: -14px;
+    font-size: 15px;
+}
+
+form {
+    margin: 20px auto;
+    width: 60%;
+    max-width: 500px;
+    min-width: 300px;
+    background-color: #2d89abCC;
+}
+
+div {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+fieldset {
+    margin: 0 auto;
+    width: 80%;
+    padding: 30px 0 76px 0;
+    border: none;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #b7e2ff;
+}
+
+hr {
+    height: 2px;
+    background-color: #a0d1cdCC;
+    border-color: #a0d1cdCC;
+    width: 90%;
+}

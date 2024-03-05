@@ -1,0 +1,37 @@
+アルファベットを含む問題文 S、diff D、コンテストの番号 Cの文字列が与えられるので、以下に指定された形式のHTMLコードを出力するプログラムを作成せよ。
+ただし、Sに含まれるアルファベットの小文字をa、大文字をAとする。
+<li><a href="https://atcoder.jp/contests/abc「C」/tasks/abc「C」_「a」">「A」 - Yet Another Recursive Function(diff:「D」)</a></li>
+<li><a href="https://atcoder.jp/contests/abc275/tasks/abc275_d">D - Yet Another Recursive Function(diff:606)</a></li>
+
+入力は以下の形式で行われる
+S
+D
+C
+
+入力例
+D - Yet Another Recursive Function
+606
+275
+
+出力例
+<p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc275/tasks/abc275_d">D - Yet Another Recursive Function(diff:606)</a></p>
+
+------------------------------------------------------以下完成コード
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(void){
+    string s, d, c;
+    getline(cin, s);
+    cin >> d >> c;
+    char tmp = s[0];
+    tmp = tolower(tmp);
+    string t;
+    t.push_back(tmp);
+    string t1 = R"(<p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc)";
+    string t2 = c + "/tasks/abc" + c + "_" + t + R"(">)";
+    string t3 = s + "(diff:" + d + ")</a></p>";
+    
+    cout << t1 + t2 + t3 << endl;
+    return 0;
+}

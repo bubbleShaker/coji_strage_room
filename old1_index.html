@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Asobiba</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <h1>そいの遊び場</h1>
+        <p id="subtitle" name="subtitle">遊び場です</p>
+        <form id="ishibashi">
+            <fieldset id="kansou2" name="kansou2">
+                <div>
+                <h2>Atcoder diff600~700 問題置き場</h2>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc275/tasks/abc275_d">D - Yet Another Recursive Function(diff:606)</a></p>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc286/tasks/abc286_d">D - Money in Hand(diff:607)</a></p>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc269/tasks/abc269_d">D - Do use hexagon grid(diff:612)</a></p>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc270/tasks/abc270_c">C - Simple path(diff:625)</a></p>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc276/tasks/abc276_d">D - Divide by 2 or 3(diff:645)</a></p>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc284/tasks/abc284_d">D - Happy New Year 2023(diff:658)</a></p>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc285/tasks/abc285_d">D - Change Usernames(diff:663)</a></p>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc268/tasks/abc268_c">C - Chinese Restaurant(diff:676)</a></p>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc257/tasks/abc257_c">C - Robot Takahashi(diff:678)</a></p>
+                <p><a id="prac" name="prac" href="https://atcoder.jp/contests/abc258/tasks/abc258_d">D - Trophy(diff:687)</a></p>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset id="first" name="first">
+                <h2>
+                    はじめに
+                </h2>
+                <div>
+                    <p>7/30からFreeCodeCampというサイトでhtmlとcssの学習を始めました。</p>
+                    <p>サイトはいくつかのコースに分けられており、確か自分は一番初めのレスポンスデザイン、的なものを学んでいるはずです。</p>
+                    <p>コース内では5つのテストとそれに向けた学習で構成されており、自分はそのうちの1つのテストを受け終わったところです。</p>
+                    <p>このテスト1つを合格するまでに、恐らく5時間ほどかかったはずです。</p>
+                    <p>5時間というと、かなり学べることは多いと思います。しかも、htmlとcssはそこまで難解なことは求められておらず、1度読めば、忘れない限りはずっと使えると思います。少なくとも、理解出来なかったから使えない、ということは無いと思います。(本当か？)</p>
+                    <p>つまりは、忘れないようにすることが一番求められていて、数を積むことが大切だと考えています。</p>
+                    <p>このwebサイトは、そのテストに必要な内容のみで構成しようと思います。そもそも、習っていないことは使えるはずが無いと思うので。</p>
+                    <p>という動機で、このサイトは作成されることになりました。</p>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset id="kansou" name="kansou">
+                <div>
+                <h2>作ってみた感想</h2>
+                <p>一つ分かったことがあります。それは、labelタグはフォームには使えるものだけど、こういったフォームを一切使わないページを作成する場合、必要ないということです。</p>
+                <p>「labelってinputと紐づけるものだよなぁ…。あれ？でもinputがないなら何のためにlabelは使うんや？？」</p>
+                <p>まぁこうなって気付きました。そう考えたら、labelはフォームの作成時に必要ということなので、こういう時には全く使わない、意外と局所的なタグなんだなと思いました。</p>
+                <p>こういう気付きを得られるのも、自分で作りたいものを作ってみることの良い点かなと思います。</p>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset id="kansou2" name="kansou2">
+                <div>
+                <h2>作ってみた感想2</h2>
+                <p>大方のデザインは簡単に作成出来ました。だけど、思っていたよりも大変だった箇所があります。それは細かな余白の調整です。これがとにかく大変でした。fieldsetを使って後ろの濃い水色の四角形を作成したのですが、これはバグってました。今は細かく調整しているからバランスよく見えますが、実はバグの原因がよく分かっていないので、細かく修正した部分が思い通りの挙動を生まないことも発生しやすく、柔軟性に欠ける設計だなぁと思います。</p>
+                <p>また、塊で処理をしたい場合が多いなと思いました。そしてその塊をレイヤーにして動かしていくようなイメージで作成していたのですが、このために結局labelタグを使いました。見た目は大丈夫ですが、これは混乱を招くlabelタグの使い方だと思います。何せ本来の意図とは全く無関係の仕様ですから。</p>
+                <p>ですが途中でFreeCodeCampのLesson2のコードを見返した時、divタグの存在を思い出し、labelタグの代わりにそれを使用することにしました。恐らくこれは問題ないdivタグの使い方だと思います。分からんけど。</p>
+                <p>また、div以外にも、sectionタグなるものを発見しました。これも階層構造を実現するのに使われているタグで、つまり自分のコードと比較してみると、formタグは本来はdivに、divタグは本来はsectionになるはずでした。ぐちゃぐちゃですね。悔い改めます。</p>
+                <p>これ以外にも、mainタグとか、fieldsetタグとか、articleタグとか、とにかく沢山のタグがあって、正直使いこなせていないなぁ、と思います。だって明確な違いなんて知らされてなくない…？(忘れているだけだったらすみません。というか多分そうです。)</p>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset id="owarini" name="owarini">
+                <div>
+                <h2>終わりに</h2>
+                <p>疲れたので一旦終わります。が、ちゃんとタグの使い分けをしたサイトをもう一度作ります。また、今度はきちんとフォームの知識を活かせるサイトを作ります。まだ明確には決めていませんが、クイズのサイトとかになると思います。
+                    ただ、それにはサーバー側のプログラムも当然必要なはずで、(例えばPOSTに対してGETをして、それに対してサーバー側がリンクをPOSTするとか、多分そういう事が必要になると思います)そしてそのサーバー側の処理をまだ習っていないので、何とも言えないなぁという状況です。
+                    恐らく、3つめのテスト辺りでクイズのサイトを作るだとか書いてあったと思うので、そこでサーバーとの通信も学ぶのかなと思います。プログラムはc++なら多少書けるはずなので、まぁあんまりそこは恐れずに行こうかなと思います。
+                    分からなくてもだんだん分かっていけばいいんじゃないかなと思いますし。そういうわけでこのサイトはいったん終わろうかなと思います。
+                    多分ローカルで出来ることは一通りやったんじゃないかなぁと思います。まだまだタグの使い分けや、サーバーとの通信、あるいは作ったことのあるサイトのテンプレートを増やしていくことを頑張っていきたいと思います。一度も作っていないサイトを作れるわけがないですし。
+                </p>
+                </div>
+            </fieldset>
+            
+        </form>
+    </body>
+    <footer>イラスト: <a href="https://twitter.com/nocopyrightgirl">@nocopyrightgirl</a></footer>
+    <footer>Copyright: <a href="https://twitter.com/bubble_shaker">@soy</a></footer>
+</html>
